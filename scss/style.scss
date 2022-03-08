@@ -1,5 +1,6 @@
 @import 'base/veribals'; 
 @import 'base/null'; 
+@import 'base/media'; 
 
 
 @import 'section/header';
@@ -11,3 +12,7 @@
 @import 'section/review';
 @import 'section/gallery';
 @import 'section/footer';
+
+
+@import 'base/padding-media'; 
+@import 'base/media';
