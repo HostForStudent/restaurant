@@ -1,0 +1,48 @@
+.foods {
+   margin: 140px 0;
+}
+/* 
+.foods__title {
+} */
+.foods__body {
+   margin-top: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.foods__img {
+   img {
+      width: 100%;
+   }
+}/* 
+.foods__menu {
+} */
+.foods__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.foods__icon {
+   img{
+      width: 100%;
+   }
+width: 160px;
+height: 140px;
+margin:15px 30px;
+}
+.foods__name {
+color: $font_color;
+   font-size: 26px;
+   line-height: 30px;
+}
+.foods__dotes {
+   border-top: 1px dashed #000;
+   height: 0;
+   width: 200px;
+   margin: 0 10px;
+}
+.foods__price {
+   color: $font_color;
+      font-size: 26px;
+      line-height: 30px;
+}

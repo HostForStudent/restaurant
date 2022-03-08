@@ -1,0 +1,152 @@
+.wrapper {
+   min-height: 100%;
+   min-width: 100%;
+}
+.header {
+   background: url(../img/header-image.jpg) center / cover no-repeat;
+   color: $theme_color;
+   padding: 60px 0 calc(30px + 10%) 0;
+   min-height: 100vh;
+   position: relative;
+}
+.header__row {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header__logo {
+   flex: 1 1 auto;
+   height: 68px;
+   width: 100px;
+}
+.logo__figur,
+.logo__figur::after {
+   display: block;
+   width: 48px;
+   height: 48px;
+   border: 3px solid $button_color;
+   box-sizing: border-box;
+   transform: rotate(-45deg);
+}
+.logo__figur::after {
+   content: "";
+   transform: translate(22.6px, 22.6px);
+}
+.header__menu {
+   flex: 1 1 auto;
+}/* 
+.menu {
+
+}
+.menu__icon {
+   
+} */
+.menu__body {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}/* 
+.menu__nav {
+} */
+.nav {
+   width: 280px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.menu__item {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+}
+.menu__contact {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+.menu__icon-basket {
+   margin: 0 25px;
+}/* 
+.menu__tel {
+} */
+.tel {
+   height: 65px;
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+   flex-direction: column;
+   position: relative;
+   padding-left: 30px;
+   &::before {
+      height: 100%;
+      position: absolute;
+      content: "";
+      width: 1px;
+      background: $theme_color;
+      left: 0;
+      top: 0;
+   }
+}
+.tel__body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.tel__icon {
+   margin-right: 8px;
+}
+.tel__numb {
+   font-weight: bold;
+   font-size: 18px;
+}
+.tel__text {
+   width: 155px;
+   font-size: 14px;
+   line-height: 19px;
+}
+.menu__button {
+   margin-left: 10px;
+}/* 
+.button {
+} */
+.header__body {
+   margin-top: 130px;
+   width: 570px;
+   text-align: center;
+   text-shadow: 3px 3px 5px #000, 0px 0px 5px #000;
+}
+.header__title {
+   color: $strong-font_color;
+   font-size: 50px;
+   line-height: 57px;
+   strong {
+      display: block;
+      font-size: 80px;
+      line-height: 92px;
+   }
+}
+.header__sub-title {
+   font-size: 18px;
+   line-height: 25px;
+   color: $theme_color;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12px;
+   div {
+      margin: 0 8px;
+   }
+   span {
+      display: block;
+      width: 61px;
+      height: 2px;
+      background: $theme_color;
+   }
+}
+.header__button {
+   margin-top: 21px;
+}
+
+@media (max-width: 1040px) {
+}

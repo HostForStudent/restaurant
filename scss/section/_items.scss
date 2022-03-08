@@ -1,0 +1,39 @@
+.plus-wrapper{
+   position: relative;
+   width: 100%;
+}
+.plus {
+   transform: translate(0, -130px); 
+   width: 100%;
+}
+.plus__row {
+   display: flex;
+   align-items: start;
+   justify-content: space-around;
+   margin: 0 2%;
+   flex-wrap: wrap;
+}
+.plus__item {
+   min-height: 330px;
+   width: 350px;
+   text-align: center;
+   padding: 10px 20px;
+   background: $theme_color;
+   height: 100%;
+   margin: 10px;
+   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+.plus__icon {
+   margin-top: 30px;
+}
+.plus__title {
+   margin-top: 4px;
+   font-size: 26px;
+   line-height: 30px;
+}
+.plus__descrip {
+   margin-top: 20px;
+   font-size: 24px;
+   line-height: 30px;
+   color: $descr_color;   
+}

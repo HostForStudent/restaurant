@@ -1,0 +1,34 @@
+.review {
+   padding: 100px 0 140px 0;
+   background: #e5e5e5;
+   text-align: center;
+   color: #000000;
+}
+.review__descr {
+   font-style: italic;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 27px;
+   text-align: center;
+}
+.review__icon {
+   img {
+      border-radius: 50%;
+   }
+   margin: 0 auto;
+   margin-top: 16px;
+   width: 100px;
+   height: 100px;
+}
+.review__titul {
+
+   margin-top: 16px;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+}
+.review__name {
+   margin-top: 9px;
+   font-size: 20px;
+   line-height: 27px;
+}
