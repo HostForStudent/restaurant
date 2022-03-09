@@ -24,6 +24,10 @@
    min-height: 510px;
    position: relative;
    margin: 10px 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
    &:last-child {
       margin-right: 0;
    }
@@ -47,8 +51,11 @@
    position: relative;
    width: 225px;
    height: 225px;
+   margin: 0 auto;
    img {
       border-radius: 50%;
+      width: 100%;
+
    }
 }
 .food-menu__sub-icon {

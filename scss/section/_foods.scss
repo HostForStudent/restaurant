@@ -1,5 +1,8 @@
 .foods {
    padding: 140px 0;
+   .container{
+      margin: 0;
+   }
 }
 /* 
 .foods__title {
@@ -27,14 +30,20 @@
    height: 140px;
    margin: 15px 30px;
    img {
-      width: 100%;
+      width: auto;
       height: 100%;
    }
+}
+.foods__row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .foods__name {
    color: $font_color;
    font-size: 26px;
    line-height: 30px;
+   margin: 0 10px;
 }
 .foods__dotes {
    border-top: 1px dashed #000;
@@ -46,6 +55,7 @@
    color: $font_color;
    font-size: 26px;
    line-height: 30px;
+   margin: 5px 10px;
 }
 @media (max-width: 768px) {
    .foods__dotes {
