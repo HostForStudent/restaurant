@@ -46,6 +46,7 @@
    height: 36px;
    color: $font_color;
    background: $strong-font_color;
+   transition: all 0.3s;
 }
 .food-menu__icon {
    position: relative;
@@ -55,7 +56,7 @@
    img {
       border-radius: 50%;
       width: 100%;
-
+      transition: all 0.3s;
    }
 }
 .food-menu__sub-icon {
@@ -74,6 +75,7 @@
    font-style: italic;
    font-size: 30px;
    line-height: 33px;
+   transition: all 0.3s;
 }
 .food-menu__name {
    margin-top: 20px;

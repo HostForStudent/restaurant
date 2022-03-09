@@ -1,0 +1,88 @@
+.gallery__column {
+   overflow: hidden;
+   img {
+      animation: img-animation 3s linear infinite alternate 0.5s;
+   }
+}
+.footer {
+   animation: footer-animation 5s linear infinite alternate 0.5s;
+}
+.plus__img-1 {
+   animation: translate-left-x-y 3s linear infinite alternate 0.5s;
+}
+.plus__img-2 {
+   animation: translate-x 3s linear infinite alternate 0.5s;
+}
+.plus__img-3 {
+   animation: translate-y 3s linear infinite alternate 0.5s;
+}
+.plus__img-4 {
+   animation: translate-right-x-y 3s linear infinite alternate 0.5s;
+}
+
+.food-menu__icon {
+   animation: rotate-5deg 2s linear infinite alternate 0.5s;
+}
+.food-menu__sub-icon {
+   animation: rotate-5deg 1s linear infinite alternate 0.5s;
+}
+.foods__icon {
+   animation: rotate-5deg 1s linear infinite alternate 0.5s;
+}
+@keyframes img-animation {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(1.5);
+   }
+}
+@keyframes footer-animation {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(1.2);
+   }
+}
+@keyframes translate-x {
+   0% {
+      transform: translateX(-10%);
+   }
+   100% {
+      transform: translateX(10%);
+   }
+}
+@keyframes translate-y {
+   0% {
+      transform: translateY(-10%);
+   }
+   100% {
+      transform: translateY(10%);
+   }
+}
+@keyframes translate-left-x-y {
+   0% {
+      transform: translate(-10%, -10%);
+   }
+   100% {
+      transform: translate(10%, 10%);
+   }
+}
+@keyframes translate-right-x-y {
+   0% {
+      transform: translate(-20%, 10%);
+   }
+   100% {
+      transform: translate(20%, -10%);
+   }
+}
+
+@keyframes rotate-5deg {
+   0% {
+      transform: rotate(5deg);
+   }
+   100% {
+      transform: rotate(-5deg);
+   }
+}

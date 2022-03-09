@@ -1,25 +1,31 @@
 .foods {
    padding: 140px 0;
-   .container{
-      margin: 0;
-   }
 }
 /* 
 .foods__title {
 } */
 .foods__body {
+
    margin-top: 140px;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    flex-wrap: wrap;
 }
 .foods__img {
-   width: 445px;
+   margin: 0 auto;
+   width: auto;
    height: 478px;
-} /* 
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 3px 3px 10px 2px #000;
+} 
 .foods__menu {
-} */
+   margin: 0 auto;
+   margin-top: 30px;
+}
 .foods__item {
    display: flex;
    align-items: center;
@@ -27,10 +33,16 @@
 }
 .foods__icon {
    width: 160px;
-   height: 140px;
-   margin: 15px 30px;
+   height: 160px;
+   margin: 30px 30px;
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s;
+   box-shadow: 3px 3px 10px 2px #000;
    img {
-      width: auto;
       height: 100%;
    }
 }
@@ -64,7 +76,7 @@
 
    .foods__icon {
       width: 140px;
-      height: 120px;
+      height: 140px;
       margin: 10px 20px;
    }
 }
