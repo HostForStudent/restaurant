@@ -1,6 +1,11 @@
 @media (max-width: 540px) {
    .header {
-      height: 50vh;
+      min-height: 50vh;
+   }
+   .header__sub-title{
+      span{
+         display: none;
+      }
    }
    .header__body {
       margin-top: 100px;
