@@ -35,9 +35,9 @@
 .logo__figur::after {
    content: "";
    transform: translate(22.6px, 22.6px);
-}
-.header__menu {
 } /* 
+.header__menu {
+} */ /* 
 .menu {
 
 } */
@@ -177,7 +177,7 @@
 }
 .header__button {
    margin: 21px auto 90px auto;
-   letter-spacing:2px;
+   letter-spacing: 2px;
 }
 
 @media (max-width: 900px) {
@@ -208,9 +208,9 @@
 
    .menu__icon {
       display: block;
-   }
+   } /* 
 .header__body{
-}
+} */
    .header__title {
       font-size: 50px;
       line-height: 54px;

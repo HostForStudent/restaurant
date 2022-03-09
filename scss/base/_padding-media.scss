@@ -46,3 +46,47 @@
       }
    }
 }
+
+
+
+@media (max-width: 540px) {
+   .plus__body {
+      padding: 0 0 20px 0;
+   }
+   .discout {
+      padding: 20px 0 25px 0;
+   }
+   .foods {
+      padding: 35px 0;
+   }
+
+   .foods__body {
+      margin-top: 35px;
+   }
+   .food-menu {
+      padding: 25px 0 35px 0;
+   }
+
+   .food-menu__row {
+      margin-top: 35px;
+   }
+   .review {
+      padding: 25px 10px 35px 10px;
+   }
+   .gallery {
+      padding: 25px 0;
+   }
+
+   .gallery__block {
+      margin-top: 15px;
+   }
+
+   .gallery__section {
+      &:nth-child(2) {
+         margin-top: 25px;
+      }
+   }
+   .gallery__cooks {
+      margin-top: 15px;
+   }
+}
