@@ -26,7 +26,7 @@
       width: 137px;
       height: 47px;
    }
-   .menu__item {
+   .food-menu__item {
       width: 290px;
       height: 276px;
    }
@@ -46,7 +46,7 @@
    }
 
    .foods__img {
-      width: 320px;
+      min-width: 290px;
       height: auto;
       display: flex;
       align-items: center;
@@ -59,9 +59,6 @@
    .food-menu__title {
       font-size: 54px;
       line-height: 62px;
-   }
-   .foods__icon {
-      margin: 10px 10px;
    }
    .foods__row {
       flex-wrap: wrap;
@@ -103,7 +100,6 @@
          height: 100%;
       }
       overflow: hidden;
-
       width: 290px;
       height: 314.07px;
       display: flex;

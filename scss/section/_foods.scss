@@ -41,9 +41,11 @@
    align-items: center;
    justify-content: center;
    transition: all 0.5s;
-   box-shadow: 3px 3px 10px 2px #000;
+   box-shadow: 3px 3px 10px 0px #000;
+   flex: 0 0 auto;
    img {
       height: 100%;
+      width: 100%;
    }
 }
 .foods__row{
@@ -75,8 +77,8 @@
    }
 
    .foods__icon {
-      width: 140px;
-      height: 140px;
-      margin: 10px 20px;
+      width: 100px;
+      height: 100px;
+      margin: 10px 0px;
    }
 }

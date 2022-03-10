@@ -16,9 +16,10 @@
    justify-content: space-between;
 }
 .header__logo {
+   z-index: 5;
    flex: 0 1 auto;
    height: 68px;
-   width: 100px;
+   width: 80px;
    display: flex;
    align-items: center;
    justify-content: start;
@@ -55,41 +56,78 @@
       position: absolute;
       left: 0;
       border-radius: 50px;
-      width: 30.88px;
-      height: 3.25px;
+      width: 30px;
+      height: 3px;
       background: $button_color;
+      transition: all 0.7s;
    }
 }
 .menu__icon {
-   &::after {
+   z-index: 5;
+   &::before {
       top: 0;
    }
    & span {
       top: 50%;
       transform: translate(0, -50%);
    }
-   &::before {
+   &::after {
       bottom: 0;
    }
 }
-.menu__body {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-} /* 
+@media (min-width: 678px) {
+   .menu__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .nav {
+      width: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .tel {
+      height: 65px;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+      padding-left: 30px;
+      &::before {
+         height: 100%;
+         position: absolute;
+         content: "";
+         width: 1px;
+         background: $theme_color;
+         left: 0;
+         top: 0;
+      }
+   }
+   .menu__button {
+      margin-left: 10px;
+   }
+   .menu__tel {
+      margin-right: 45px;
+   }
+   .tel__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+/* 
 .menu__nav {
 } */
-.nav {
-   width: 280px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
+
 .menu__item {
    font-weight: 600;
    font-size: 14px;
    line-height: 19px;
    color: $theme_color;
+   display: block;
+   padding: 5px;
 }
 .menu__contact {
    display: flex;
@@ -99,31 +137,10 @@
 .menu__icon-basket {
    margin: 0 25px;
 }
-.menu__tel {
-   margin-right: 45px;
-}
-.tel {
-   height: 65px;
-   display: flex;
-   align-items: start;
-   justify-content: space-between;
-   flex-direction: column;
-   position: relative;
-   padding-left: 30px;
-   &::before {
-      height: 100%;
-      position: absolute;
-      content: "";
-      width: 1px;
-      background: $theme_color;
-      left: 0;
-      top: 0;
-   }
-}
-.tel__body {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+.tel__icon {
+   width: 23px;
+   height: 23px;
+   margin-right: 10px;
 }
 .tel__numb {
    font-weight: bold;
@@ -134,9 +151,8 @@
    font-size: 14px;
    line-height: 19px;
 }
-.menu__button {
-   margin-left: 10px;
-} /* 
+
+/* 
 .button {
 } */
 .header {
@@ -203,13 +219,15 @@
       content: "";
       transform: translate(16px, 16px);
    }
-   .menu__body {
-      display: none;
+
+   .menu__contact {
+      display: block;
    }
 
    .menu__icon {
       display: block;
-   } /* 
+   }
+   /* 
 .header__body{
 } */
    .header__title {

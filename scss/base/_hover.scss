@@ -1,78 +1,84 @@
-.foods__item {
-   &:hover .foods__icon {
+body._pc {
+   .foods__item {
+      &:hover .foods__icon {
+         animation-play-state: paused;
+         box-shadow: 3px 3px 10px 5px #000;
+      }
+   }
+   .gallery__column img:hover {
       animation-play-state: paused;
    }
-}
-.gallery__column img:hover {
-   animation-play-state: paused;
-}
 
-.food-menu__item:hover .food-menu__sub-icon,
-.food-menu__item:hover .food-menu__icon {
-   animation-play-state: paused;
-}
-.food-menu__item {
-   &:hover {
-      transform: translate(-3px, -10px);
-      box-shadow: 1px 1px #000, 5px 5px 7px #fff;
+   .food-menu__item:hover .food-menu__sub-icon,
+   .food-menu__item:hover .food-menu__icon {
+      animation-play-state: paused;
    }
-   transition: all 0.5s;
-}
+   .food-menu__item {
+      &:hover {
+         transform: translate(-3px, -10px);
+         box-shadow: 1px 1px #000, 5px 5px 7px #fff;
+      }
+      transition: all 0.5s;
+   }
 
-.plus__item {
-   &:hover {
-      transform: translate(0, -10px);
-      box-shadow: 0px 7px 10px #000;
+   .plus__item {
+      &:hover {
+         transform: translate(0, -10px);
+         box-shadow: 0px 7px 10px #000;
+      }
+      transition: all 0.5s;
    }
-   transition: all 0.5s;
-}
-.button {
-   &:hover {
-      transform: translate(-5px, -5px);
-      box-shadow: 5px 5px 7px #fff;
+   .button {
+      &:hover {
+         transform: translate(-5px, -5px);
+         box-shadow: 5px 5px 7px #fff;
+      }
+      transition: all 0.3s;
    }
-   transition: all 0.3s;
-}
-.menu__item {
-   &:hover {
-      transform: translate(-3px, -3px);
-      text-shadow: 2px 2px 5px #fff;
-   }
-   transition: all 0.1s;
-}
-.food-menu__button {
-   &:hover {
-      transform: translate(-1px, -1px);
-      box-shadow: 2px 2px 10px #000;
-   }
-   transition: all 0.1s;
-}
-
-.food-menu__item:hover .food-menu__icon img,
-.food-menu__item:hover .food-menu__sub-icon,
-.food-menu__item:hover .food-menu__recomend {
-   box-shadow: 3px 3px 10px 2px #000;
-}
-
-.menu__item {
-   &:active {
-      transform: translate(-1px, -1px);
-      text-shadow: 0px 0px 3px #fff;
+   .menu__item {
+      &:hover {
+         transform: translate(-3px, -3px);
+         text-shadow: 2px 2px 5px #fff;
+      }
       transition: all 0.1s;
    }
-}
-.button {
-   &:active {
-      transform: translate(-1px, -1px);
-      box-shadow: 2px 2px 3px #fff;
-      transition: all 0.0s;
+   .food-menu__button {
+      &:hover {
+         transform: translate(-1px, -1px);
+         box-shadow: 2px 2px 10px #000;
+      }
+      transition: all 0.1s;
+   }
+
+   .food-menu__item:hover .food-menu__icon img,
+   .food-menu__item:hover .food-menu__sub-icon,
+   .food-menu__item:hover .food-menu__recomend {
+      box-shadow: 3px 3px 10px 2px #000;
    }
 }
 
-.food-menu__button {
-   &:active {
-      transform: translate(-1px, -1px);
-      box-shadow: 2px 2px 3px #fff;
-      transition: all 0.1s;
+
+body .wrapper{
+   .menu__item {
+      &:active {
+         transform: translate(-1px, -1px);
+         text-shadow: 0px 0px 3px #fff;
+         transition: all 0.1s;
+      }
+   }
+   .button {
+      &:active {
+         transform: translate(-1px, -1px);
+         box-shadow: 2px 2px 3px #fff;
+         transition: all 0.1s;
+      }
+   }
+   
+   .food-menu__button {
+      &:active {
+         transform: translate(-1px, -1px);
+         box-shadow: 2px 2px 3px #fff;
+         transition: all 0.1s;
+      }
    }
 }

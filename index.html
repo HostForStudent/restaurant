@@ -21,26 +21,28 @@
                <div class="header__menu menu">
                   <div class="menu__icon"><span></span></div>
                   <div class="menu__body">
-                     <nav class="menu__nav nav">
-                        <a href="#" class="menu__item">ГЛАВНАЯ</a>
-                        <a href="#" class="menu__item">МЕНЮ</a>
-                        <a href="#" class="menu__item">О НАС</a>
-                        <a href="#" class="menu__item">БРОНЬ</a>
-                     </nav>
-                     <div class="menu__contact">
-                        <div class="menu__icon-basket">
-                           <img src="icons/basket.png" alt="">
-                        </div>
-                        <div class="menu__tel tel">
-                           <div class="tel__body">
-                              <img src="icons/tel.png" alt="tel__img" class="tel__icon">
-                              <div class="tel__numb cursor">+998-90-222-64-03</div>
+                     <div class="menu__row">
+                        <nav class="menu__nav nav">
+                           <a data-goto=".section-1" href="#" class="menu__item">ГЛАВНАЯ</a>
+                           <a data-goto=".section-2" href="#" class="menu__item">БРОНЬ</a>
+                           <a data-goto=".section-3" href="#" class="menu__item">МЕНЮ</a>
+                           <a data-goto=".section-4" href="#" class="menu__item">О НАС</a>
+                        </nav>
+                        <div class="menu__contact">
+                           <div class="menu__icon-basket">
+                              <img src="icons/basket.png" alt="">
                            </div>
-                           <div class="tel__text">Свяжитесь с нами для
-                              бронирования</div>
+                           <div class="menu__tel tel">
+                              <div class="tel__body">
+                                 <img src="icons/tel.png" alt="tel__img" class="tel__icon">
+                                 <div class="tel__numb cursor">+998-90-222-64-03</div>
+                              </div>
+                              <div class="tel__text">Свяжитесь с нами для
+                                 бронирования</div>
+                           </div>
                         </div>
+                        <button type="submit" class="menu__button button">ЗАКАЗ СТОЛИКА</button>
                      </div>
-                     <button type="submit" class="menu__button button">ЗАКАЗ СТОЛИКА</button>
                   </div>
                </div>
             </div>
@@ -51,15 +53,13 @@
                      <h2>ДОМ ЛУЧШЕЙ ЕДЫ</h2>
                   </div> <span></span>
                </div>
-               <button class="button header__button">МЕНЮ</button>
+               <button data-goto=".section-3" class="button header__button">МЕНЮ</button>
             </div>
          </div>
-
       </header>
-
       <section class="plus-wrapper">
          <div class="container">
-            <div class="plus">
+            <div class="plus section-1">
                <div class="plus__row">
                   <div class="plus__item">
                      <div class="plus__icon"><img src="icons/food-icon.png" alt="food"></div>
@@ -121,7 +121,7 @@
          </div>
       </section>
 
-      <section class="discout">
+      <section  class="discout section-2">
          <div class="container">
             <div class="discout__row">
                <div class="discout__body">
@@ -171,7 +171,7 @@
          </div>
       </section>
 
-      <section class="food-menu">
+      <section class="food-menu section-3">
          <div class="container">
             <div class="food-menu__title">Наше меню</div>
             <div class="food-menu__row">
@@ -210,7 +210,7 @@
          </div>
       </section>
 
-      <section class="review">
+      <section class="review section-4">
          <div class="container">
             <div class="review__descr">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
                Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан
@@ -257,7 +257,11 @@
       <div class="footer__wrapper">
          <footer class="footer"></footer>
       </div>
+
    </div>
+
+
+   <script src="js/script.js"></script>
 </body>
 
 </html>
