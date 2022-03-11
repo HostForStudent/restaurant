@@ -27,9 +27,11 @@ if (window.innerWidth <= 677) {
    }
 }
 function closeMenu() {
-   menuIcon.classList.remove("_active");
-   menu.classList.remove("_open");
-   body.classList.remove("_lock");
+   if (menu.classList.contains("_open")) {
+      menuIcon.classList.remove("_active");
+      menu.classList.remove("_open");
+      body.classList.remove("_lock");
+   }
 }
 
 const goToLinks = document.querySelectorAll("[data-goto]");
@@ -55,4 +57,28 @@ function funcGoto(e) {
       })
    }
    e.preventDefault();
+}
+
+const popupOpenBtn = document.querySelectorAll(".popup-open");
+if (popupOpenBtn.length > 0) {
+   for (let index = 0; index < popupOpenBtn.length; index++) {
+      const button = popupOpenBtn[index];
+      button.addEventListener("click", function (e) {
+         return popupOpenFunc();
+      })
+   }
+}
+function popupOpenFunc() {
+   const popupBlock = document.querySelector(".popup");
+   popupBlock.classList.add("_open");
+   popupCloseFunc(popupBlock);
+   closeMenu();
+}
+function popupCloseFunc(popupBlock) {
+   if (popupBlock.classList.contains("_open")) {
+      body.addEventListener("click", function (e) {
+         if (e.target.classList.contains("popup-close") || e.target.classList.contains("popup__wrapper"))
+            popupBlock.classList.remove("_open");
+      })
+   }
 }
