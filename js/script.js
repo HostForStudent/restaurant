@@ -72,13 +72,42 @@ function popupOpenFunc() {
    const popupBlock = document.querySelector(".popup");
    popupBlock.classList.add("_open");
    popupCloseFunc(popupBlock);
-   closeMenu();
+   if (menu.classList.contains("_open")) {
+      closeMenu();
+   }
+   bodyLock();
 }
 function popupCloseFunc(popupBlock) {
    if (popupBlock.classList.contains("_open")) {
       body.addEventListener("click", function (e) {
-         if (e.target.classList.contains("popup-close") || e.target.classList.contains("popup__wrapper"))
+         if (e.target.classList.contains("popup-close") || e.target.classList.contains("popup__wrapper")) {
             popupBlock.classList.remove("_open");
+            bodyUnlock()
+         }
       })
    }
 }
+
+const lockPaddingBlock = document.querySelectorAll("padding-lock");
+function bodyLock() {
+   const paddingValue = window.innerWidth - body.clientWidth + 'px';
+   if (lockPaddingBlock.length > 0) {
+      for (let index = 0; index < lockPaddingBlock.length; index++) {
+         const block = lockPaddingBlock[index];
+         block.style.paddingRight = paddingValue;
+      }
+   }
+   body.classList.add("_lock");
+   body.style.paddingRight = paddingValue;
+}
+function bodyUnlock() {
+   if (lockPaddingBlock.length > 0) {
+      for (let index = 0; index < lockPaddingBlock.length; index++) {
+         const block = lockPaddingBlock[index];
+         block.style.paddingRight = '0px';
+      }
+   }
+   body.classList.remove("_lock");
+   body.style.paddingRight = '0px';
+}
+
