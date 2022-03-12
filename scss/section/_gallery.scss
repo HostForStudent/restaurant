@@ -31,16 +31,6 @@
 } /* 
 .gallery__column {
 } */
-.gallery__img-big {
-   margin: 15px;
-   width: 540px;
-   height: 270px;
-   
-   overflow: hidden;
-   img {
-      width: 100%;
-   }
-}
 .gallery__row {
    display: flex;
    align-items: center;
@@ -50,7 +40,7 @@
    overflow: hidden;
    margin: 15px;
    width: 255px;
-   height: 270px;
+   height: 255px;
    img {
       width: 100%;
    }

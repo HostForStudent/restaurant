@@ -2,8 +2,8 @@
    .header {
       min-height: 50vh;
    }
-   .header__sub-title{
-      span{
+   .header__sub-title {
+      span {
          display: none;
       }
    }
@@ -117,26 +117,36 @@
    .footer {
       height: 50vh;
    }
-   .popup__content{
+   .popup__content {
       padding: 15px 30px;
    }
-   .popup__title{
-      font-size: 22px;line-height: 130%;
+   .popup__title {
+      font-size: 22px;
+      line-height: 130%;
    }
-   .popup__exit{
+   .popup__exit {
       font-size: 22px;
       top: 10px;
       right: 10px;
    }
-   .popup__desc{
+   .popup__desc {
       font-size: 16px;
       line-height: 130%;
    }
-   .popup__button{
+   .popup__button {
       font-size: 14px;
       max-width: 150px;
       padding: 5px;
       margin: 5px auto;
       cursor: pointer;
+   }
+   .popup-img__wrapper{
+      padding: 15px;
+   }
+   .popup-img__img-block{
+      padding: 5px;
+   }
+   .footer__wrapper {
+      padding: 20px;
    }
 }

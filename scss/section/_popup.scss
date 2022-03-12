@@ -34,10 +34,10 @@
    line-height: 130%;
    text-align: center;
    transition: all 0.8s;
-   transform: scale(0) rotate(360deg);
+   transform: scale(0) ;
 }
 .popup._open .popup__content{
-   transform: scale(1) rotate(0deg);
+   transform: scale(1) ;
 }
 .popup__exit {
    cursor: pointer;

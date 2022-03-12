@@ -7,6 +7,7 @@ body._pc {
    }
    .gallery__column img:hover {
       animation-play-state: paused;
+      filter: saturate(10%) contrast(50%);
    }
 
    .food-menu__item:hover .food-menu__sub-icon,
